@@ -1,0 +1,23 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Author: Mathieu Bresciani
+% Email: brescianimathieu@gmail.com
+% GitHub: https://github.com/bresch/Glossary
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt,a4paper]{book}
+
+\usepackage{amsmath}
+\usepackage[nonumberlist]{glossaries}
+\makeglossaries
+
+% Load entries from other files
+\loadglsentries{acronyms.tex}
+\loadglsentries{symbols.tex}
+
+\begin{document}
+
+% Add all the entries into the glosary
+\glsaddall
+\printglossaries
+
+\end{document}
