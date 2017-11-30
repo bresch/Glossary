@@ -1,3 +1,4 @@
+% Greek symbols
 \newglossaryentry{phi}
 {
 	name={$\phi$},
@@ -26,25 +27,182 @@
 	sort=attitude
 }
 
+% Vectors
 \newglossaryentry{r}
 {
-	name={$\textbf{r}$},
-  	description={Position vector $\textbf{r} = [X \quad Y \quad Z]^{T}$},
+	name={$\bm{\mathrm{r}}$},
+	description={Position vector $\bm{\mathrm{r}} = [x \quad y \quad z]^{T}$},
   	sort=r
 }
 
 \newglossaryentry{v}
 {
-	name={$\textbf{v}$},
-	description={Velocity vector. $\textbf{v} = \dot{\textbf{r}} = [v_X \quad v_Y \quad v_Z]^T$},
+	name={$\bm{\mathrm{v}}$},
+	description={Velocity vector. $\bm{\mathrm{v}} = \bm{\mathrm{\dot{r}}} = [v_x \quad v_y \quad v_z]^T$},
 	sort=v
+}
+
+\newglossaryentry{vb}
+{
+	name={$\bm{\mathrm{v}}^b$},
+	description={Velocity vector in body frame. $\bm{\mathrm{v}}^b = [u \quad v \quad w]^T$},
+	sort=vb
 }
 
 \newglossaryentry{a}
 {
-	name={$\textbf{a}$},
-	description={Acceleration vector. $\textbf{a} = [a_X \quad a_Y \quad a_Z]^T$},
+	name={$\bm{\mathrm{a}}$},
+	description={Acceleration vector. $\bm{\mathrm{a}} = \bm{\mathrm{\dot{v}}} = \bm{\mathrm{\ddot{r}}} = [a_x \quad a_y \quad a_z]^T$},
 	sort=a
 }
 
+\newglossaryentry{wb}
+{
+	name={$\bm{w}^b$},
+	description={Body rates vector. $\bm{w}^b = [p \quad q \quad r]^T$},
+	sort=wb
+}
+
+\newglossaryentry{Maero_b}
+{
+	name={$\bm{\mathrm{M}}_{Aero}^b$},
+	description={Body aerodynamic moments. $\bm{\mathrm{M}}_{Aero}^b = [\ell \quad m \quad n]^T$},
+	sort=Mb
+}
+
+\newglossaryentry{M_Tb}
+{
+	name={$\bm{\mathrm{M}}_T^b$},
+	description={Body aerodynamic moments. $\bm{\mathrm{M}}_T^b = [\ell_T \quad m_T \quad n_T]^T$},
+	sort=Mb
+}
+
+\newglossaryentry{F}
+{
+	name={$\bm{\mathrm{F}}$},
+	description={Force vector. $\bm{\mathrm{F}} = [X \quad Y \quad Z]^T$},
+	sort=F_Tb
+}
+
+\newglossaryentry{F_Aw}
+{
+	name={$\bm{\mathrm{F}}_{Aero}^w$},
+	description={Aerodynamic forces in wind frame. \textit{Lift} $L$, \textit{drag} $D$ and \textit{cross-wind force} $C$. $\bm{\mathrm{F}}_{Aero}^w = [-D \quad -C \quad -L]^T$},
+	sort=F_Tb
+}
+
+\newglossaryentry{F_Tb}
+{
+	name={$\bm{\mathrm{F}}_T^b$},
+	description={Thrust force in body frame. $\bm{\mathrm{F}}_T^b = [X_T^b \quad Y_T^b \quad Z_T^b]^T$},
+	sort=F_Tb
+}
+
+\newglossaryentry{gravity}
+{
+	name={$\bm{\mathrm{g}}$},
+	description={Gravity vector in the local NED frame. $\bm{\mathrm{g}} = [0 \quad 0 \quad g]^T$},
+	sort=gravity
+}
+
+\newglossaryentry{state}
+{
+	name={$\bm{\mathrm{x}}$},
+	description={General state vector},
+	sort=state
+}
+
+\newglossaryentry{quat}
+{
+	name={$\bm{\mathrm{\tilde{q}}}$},
+	description={Attitude quaternion. $\bm{\mathrm{\tilde{q}}} = (q_0, q_1, q_2, q_3) = (q_0, \bm{\mathrm{q}})$},
+	sort=quat
+}
+
+% Matrices
+\newglossaryentry{rot}
+{
+	name={$\bm{\mathrm{R}}_a^b$},
+	description={Rotation matrix. Rotates a vector from frame $a$ to frame $b$. $\bm{\mathrm{v}}^b = \bm{\mathrm{R}}_a^b \bm{\mathrm{v}}^a$},
+	sort=rot
+}
+
+% Scalars
+\newglossaryentry{alpha}
+{
+	name={$\alpha$},
+	description={Angle of attack (AOA)},
+	sort=alpha
+}
+
+\newglossaryentry{beta}
+{
+	name={$\beta$},
+	description={Angle of sideslip (AOS)},
+	sort=beta
+}
+
+\newglossaryentry{control_surface}
+{
+	name={$\delta_{a,e,r}$},
+	description={Aerodynamic control surface angular deflection. Subscripts $a$, $e$ and $r$ stand for \textit{aileron}, \textit{elevator} and \textit{rudder}, respectively. A positive deflection generates a negative moment},
+	sort=control_surface
+}
+
+% Subscripts, superscripts and decorators
+\newglossaryentry{hat}
+{
+	name={$\hat{()}$},
+	description={Estimate},
+	sort=hat
+}
+
+\newglossaryentry{dot}
+{
+	name={$\dot{()}$},
+	description={Time derivative},
+	sort=dot
+}
+
+\newglossaryentry{transpose}
+{
+	name={$()^T$},
+	description={Matrix transpose},
+	sort=transpose
+}
+
+\newglossaryentry{inverse}
+{
+	name={$()^{-1}$},
+	description={Matrix inverse},
+	sort=transpose
+}
+
+\newglossaryentry{b_frame}
+{
+	name={$()^b$},
+	description={Resolved in the body FRD frame},
+	sort=b_frame
+}
+
+\newglossaryentry{l_frame}
+{
+	name={$()^\ell$},
+	description={Resolved in the local NED frame},
+	sort=b_frame
+}
+
+\newglossaryentry{w_frame}
+{
+	name={$()^w$},
+	description={Resolved in the wind frame},
+	sort=b_frame
+}
+
+\newglossaryentry{conj}
+{
+	name={$()^*$},
+	description={Complex conjugate},
+	sort=b_frame
+}
 
