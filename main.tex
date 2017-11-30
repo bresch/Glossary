@@ -4,21 +4,26 @@
 % GitHub: https://github.com/bresch/Glossary
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[12pt,a4paper]{book}
+\documentclass{article}
 
+\usepackage[acronyms,nonumberlist]{glossaries}
 \usepackage{bm}
-\usepackage[nonumberlist]{glossaries}
+
+\newglossary[gsg]{greek}{gsl}{gso}{Greek symbols}
+\newglossary[dog]{deco}{dos}{drt}{Decorators}
 \makeglossaries
 
 % Load entries from other files
-\loadglsentries{acronyms.tex}
-\loadglsentries{symbols.tex}
+\loadglsentries{symbols}
+\loadglsentries{acronyms}
 
 % Add all the entries into the glosary
 \glsaddall
-
 \begin{document}
 
-\printglossaries
+\printglossary[type=acronym,title={Acronyms}]
+\printglossary[type=greek,title={Greek symbols}]
+\printglossary[type=main,title={Latin symbols}]
+\printglossary[type=deco,title={Decorators}]
 
 \end{document}

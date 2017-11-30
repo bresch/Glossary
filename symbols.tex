@@ -3,28 +3,32 @@
 {
 	name={$\phi$},
   	description={Roll euler angle. Also named \textit{Bank angle} in aviation},
-  	sort=theta
+  	sort=theta,
+	type=greek
 }
 
 \newglossaryentry{theta}
 {
 	name={$\theta$},
   	description={Pitch euler angle},
-  	sort=theta
+  	sort=theta,
+	type=greek
 }
 
 \newglossaryentry{psi}
 {
 	name={$\psi$},
   	description={Yaw euler angle. Also named \textit{Heading}},
-  	sort=psi
+  	sort=psi,
+	type=greek
 }
 
 \newglossaryentry{attitude}
 {
 	name={$\Psi$},
 	description={Attitude vector. $\Psi = [\phi \quad \theta \quad \psi]^T$},
-	sort=attitude
+	sort=attitude,
+	type=greek
 }
 
 % Vectors
@@ -153,21 +157,24 @@
 {
 	name={$\alpha$},
 	description={Angle of attack (AOA)},
-	sort=alpha
+	sort=alpha,
+	type=greek
 }
 
 \newglossaryentry{beta}
 {
 	name={$\beta$},
 	description={Angle of sideslip (AOS)},
-	sort=beta
+	sort=beta,
+	type=greek
 }
 
 \newglossaryentry{control_surface}
 {
 	name={$\delta_{a,e,r}$},
 	description={Aerodynamic control surface angular deflection. Subscripts $a$, $e$ and $r$ stand for \textit{aileron}, \textit{elevator} and \textit{rudder}, respectively. A positive deflection generates a negative moment},
-	sort=control_surface
+	sort=control_surface,
+	type=greek
 }
 
 % Subscripts, superscripts and decorators
@@ -175,55 +182,63 @@
 {
 	name={$\hat{()}$},
 	description={Estimate},
-	sort=hat
+	sort=hat,
+	type=deco
 }
 
 \newglossaryentry{dot}
 {
 	name={$\dot{()}$},
 	description={Time derivative},
-	sort=dot
+	sort=dot,
+	type=deco
 }
 
 \newglossaryentry{transpose}
 {
 	name={$()^T$},
 	description={Matrix transpose},
-	sort=transpose
+	sort=transpose,
+	type=deco
 }
 
 \newglossaryentry{inverse}
 {
 	name={$()^{-1}$},
 	description={Matrix inverse},
-	sort=transpose
+	sort=transpose,
+	type=deco
 }
 
 \newglossaryentry{b_frame}
 {
 	name={$()^b$},
 	description={Resolved in the body FRD frame},
-	sort=b_frame
+	sort=b_frame,
+	type=deco
 }
 
 \newglossaryentry{l_frame}
 {
 	name={$()^\ell$},
 	description={Resolved in the local NED frame},
-	sort=b_frame
+	sort=b_frame,
+	type=deco
 }
 
 \newglossaryentry{w_frame}
 {
 	name={$()^w$},
 	description={Resolved in the wind frame},
-	sort=b_frame
+	sort=b_frame,
+	type=deco
 }
 
 \newglossaryentry{conj}
 {
 	name={$()^*$},
 	description={Complex conjugate},
-	sort=b_frame
+	sort=b_frame,
+	type=deco
 }
 
