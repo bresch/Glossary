@@ -42,12 +42,28 @@
 	sort=v
 }
 
-\newglossaryentry{vb}
+\newglossaryentry{v_l}
 {
-	name={$\bm{\mathrm{v}}^b$},
-	description={Velocity vector in body frame. $\bm{\mathrm{v}}^b = [u \quad v \quad w]^T$},
-	sort=vb
+	name={$\bm{\mathrm{v}}^\ell$},
+	description={Velocity vector in local frame. $\bm{\mathrm{v}}^\ell = \bm{\mathrm{v}}_w^\ell + \bm{\mathrm{w}}^\ell$},
+	sort=v_l
 }
+
+\newglossaryentry{v_wb}
+{
+	name={$\bm{\mathrm{v}}_w^b$},
+	description={Relative airspeed velocity vector in body frame. $\bm{\mathrm{v}}_w^b = [u \quad v \quad w]^T$},
+	sort=v_wb
+}
+
+\newglossaryentry{w_l}
+{
+	name={$\bm{\mathrm{w}}^\ell$},
+	description={Wind velocity vector in local frame. $\bm{\mathrm{w}}^\ell = [w_N \quad w_E \quad w_D]^T$
+				 Usually $w_D$ is assumed to be null},
+	sort=w_l
+}
+
 
 \newglossaryentry{a}
 {
@@ -63,32 +79,32 @@
 	sort=wb
 }
 
-\newglossaryentry{Maero_b}
+\newglossaryentry{M_aerob}
 {
 	name={$\bm{\mathrm{M}}_{Aero}^b$},
 	description={Body aerodynamic moments. $\bm{\mathrm{M}}_{Aero}^b = [\ell \quad m \quad n]^T$},
-	sort=Mb
+	sort=M_aerob
 }
 
 \newglossaryentry{M_Tb}
 {
 	name={$\bm{\mathrm{M}}_T^b$},
 	description={Body aerodynamic moments. $\bm{\mathrm{M}}_T^b = [\ell_T \quad m_T \quad n_T]^T$},
-	sort=Mb
+	sort=M_Tb
 }
 
 \newglossaryentry{F}
 {
 	name={$\bm{\mathrm{F}}$},
 	description={Force vector. $\bm{\mathrm{F}} = [X \quad Y \quad Z]^T$},
-	sort=F_Tb
+	sort=F
 }
 
 \newglossaryentry{F_Aw}
 {
 	name={$\bm{\mathrm{F}}_{Aero}^w$},
 	description={Aerodynamic forces in wind frame. \textit{Lift} $L$, \textit{drag} $D$ and \textit{cross-wind force} $C$. $\bm{\mathrm{F}}_{Aero}^w = [-D \quad -C \quad -L]^T$},
-	sort=F_Tb
+	sort=F_Aw
 }
 
 \newglossaryentry{F_Tb}
@@ -116,9 +132,11 @@
 {
 	name={$\bm{\mathrm{\tilde{q}}}$},
 	description={Hamiltonian attitude quaternion.
-	$\bm{\mathrm{\tilde{q}}} = (q_0, q_1, q_2, q_3) = (q_0, \bm{\mathrm{q}})$\\
-	A vector in the local NED frame $\ell$ can be represented in the body framae $b$ using $\bm{\mathrm{\tilde{v}}}^b = \bm{\mathrm{\tilde{q}}} \, \bm{\mathrm{\tilde{v}}}^\ell \, \bm{\mathrm{\tilde{q}}}^*$ (or $\bm{\mathrm{\tilde{q}}}^{-1}$ instead of $\bm{\mathrm{\tilde{q}}}^*$ if $\bm{\mathrm{\tilde{q}}}$ is not unitary).\\
-	$\bm{\mathrm{\tilde{v}}}$ represents a \textit{quaternionized} vector: $\bm{\mathrm{\tilde{v}}} = (0,\bm{\mathrm{v}})$},
+				 $\bm{\mathrm{\tilde{q}}} = (q_0, q_1, q_2, q_3) = (q_0, \bm{\mathrm{q}})$\\
+				 A vector in the local NED frame $\ell$ can be represented in the body framae $b$ using
+				 $\bm{\mathrm{\tilde{v}}}^b = \bm{\mathrm{\tilde{q}}} \, \bm{\mathrm{\tilde{v}}}^\ell \, \bm{\mathrm{\tilde{q}}}^*$ (or $\bm{\mathrm{\tilde{q}}}^{-1}$
+				 instead of $\bm{\mathrm{\tilde{q}}}^*$ if $\bm{\mathrm{\tilde{q}}}$ is not unitary).\\
+				 $\bm{\mathrm{\tilde{v}}}$ represents a \textit{quaternionized} vector: $\bm{\mathrm{\tilde{v}}} = (0,\bm{\mathrm{v}})$},
 	sort=quat
 }
 
