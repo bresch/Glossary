@@ -115,7 +115,10 @@
 \newglossaryentry{quat}
 {
 	name={$\bm{\mathrm{\tilde{q}}}$},
-	description={Hamiltonian attitude quaternion. $\bm{\mathrm{\tilde{q}}} = (q_0, q_1, q_2, q_3) = (q_0, \bm{\mathrm{q}})$ A vector in the local NED frame $\ell$ can be represented in the body framae $b$ using $\bm{\mathrm{v}}^b = \bm{\mathrm{\tilde{q}}} \, \bm{\mathrm{\tilde{v}}}^\ell \, \bm{\mathrm{\tilde{q}}}^*$ (or $\bm{\mathrm{\tilde{q}}}^{-1}$ instead of $\bm{\mathrm{\tilde{q}}}^*$ if $\bm{\mathrm{\tilde{q}}}$ is not unitary)},
+	description={Hamiltonian attitude quaternion.
+	$\bm{\mathrm{\tilde{q}}} = (q_0, q_1, q_2, q_3) = (q_0, \bm{\mathrm{q}})$\\
+	A vector in the local NED frame $\ell$ can be represented in the body framae $b$ using $\bm{\mathrm{\tilde{v}}}^b = \bm{\mathrm{\tilde{q}}} \, \bm{\mathrm{\tilde{v}}}^\ell \, \bm{\mathrm{\tilde{q}}}^*$ (or $\bm{\mathrm{\tilde{q}}}^{-1}$ instead of $\bm{\mathrm{\tilde{q}}}^*$ if $\bm{\mathrm{\tilde{q}}}$ is not unitary).\\
+	$\bm{\mathrm{\tilde{v}}}$ represents a \textit{quaternionized} vector: $\bm{\mathrm{\tilde{v}}} = (0,\bm{\mathrm{v}})$},
 	sort=quat
 }
 
