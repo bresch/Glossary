@@ -9,7 +9,6 @@
 \usepackage[acronyms,nonumberlist]{glossaries}
 \usepackage{bm}
 
-\newglossary[gsg]{greek}{gsl}{gso}{Greek symbols}
 \newglossary[dog]{deco}{dos}{drt}{Decorators}
 \makeglossaries
 
@@ -19,11 +18,11 @@
 
 % Add all the entries into the glosary
 \glsaddall
+
 \begin{document}
 
 \printglossary[type=acronym,title={Acronyms}]
-\printglossary[type=greek,title={Greek symbols}]
-\printglossary[type=main,title={Latin symbols}]
+\printglossary[type=main,title={Symbols}]
 \printglossary[type=deco,title={Decorators}]
 
 \end{document}
