@@ -1,30 +1,30 @@
 % Greek symbols
-\newglossaryentry{phi}
+\newglossaryentry{euler_phi}
 {
 	name={$\phi$},
   	description={Roll euler angle. Also named \textit{Bank angle} in aviation},
-  	sort=theta
+  	sort=euler_phi
 }
 
-\newglossaryentry{theta}
+\newglossaryentry{euler_theta}
 {
 	name={$\theta$},
   	description={Pitch euler angle},
-  	sort=theta
+  	sort=euler_theta
 }
 
-\newglossaryentry{psi}
+\newglossaryentry{euler_psi}
 {
 	name={$\psi$},
   	description={Yaw euler angle. Also named \textit{Heading}},
-  	sort=psi
+	sort=euler_psi
 }
 
-\newglossaryentry{attitude}
+\newglossaryentry{euler_attitude}
 {
 	name={$\Psi$},
 	description={Attitude vector. $\Psi = [\phi \quad \theta \quad \psi]^T$},
-	sort=attitude
+	sort=euler_attitude
 }
 
 % Vectors
@@ -121,11 +121,11 @@
 	sort=gravity
 }
 
-\newglossaryentry{state}
+\newglossaryentry{x_state}
 {
 	name={$\bm{\mathrm{x}}$},
 	description={General state vector},
-	sort=state
+	sort=x_state
 }
 
 \newglossaryentry{quat}
@@ -203,27 +203,27 @@
 	type=deco
 }
 
-\newglossaryentry{b_frame}
+\newglossaryentry{frame_b}
 {
 	name={$()^b$},
 	description={Resolved in the body FRD frame},
-	sort=b_frame,
+	sort=frame_b,
 	type=deco
 }
 
-\newglossaryentry{l_frame}
+\newglossaryentry{frame_l}
 {
 	name={$()^\ell$},
 	description={Resolved in the local NED frame},
-	sort=b_frame,
+	sort=frame_l,
 	type=deco
 }
 
-\newglossaryentry{w_frame}
+\newglossaryentry{frame_w}
 {
 	name={$()^w$},
 	description={Resolved in the wind frame},
-	sort=b_frame,
+	sort=frame_w,
 	type=deco
 }
 
@@ -231,7 +231,7 @@
 {
 	name={$()^*$},
 	description={Complex conjugate},
-	sort=b_frame,
+	sort=conj,
 	type=deco
 }
 
