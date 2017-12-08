@@ -1,7 +1,9 @@
 # Glossary
+The latest compiled version of this glossary can be viewed [here](https://github.com/bresch/Glossary/blob/master/main.pdf)
+
 This glossary contains three main parts:
 - A list of acronyms: Defines the meaning of several acronyms used in PX4 and in most aeronautics and robotics texts
-- A list of symbols: Reserved alphabet letters and decorators widely used in aeronautics and robotics, carefully chosed to avoid any ambiguity
+- A list of symbols: Reserved alphabet letters and decorators widely used in aeronautics and robotics, carefully chosen to avoid any ambiguity
 - A definition of notation: General rules to define a vector, scalar, meaning of super- and subscripts, etc. (**TODO**)
 
 Notations are mostly taken from:
