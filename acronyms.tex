@@ -9,14 +9,28 @@
 {
 	type=acronym,
 	name={NED},
-	description={Local inertial frame where the X-axis is pointing towards the true North, the Y-axis towards the East and the Z-axis is Down, completing the right-hand rule. Its origin is defined when and where the drone arms}
+	description={Coordinate system where the X-axis is pointing towards the true North, the Y-axis is pointing East and the Z-axis is pointing Down, completing the right-hand rule}
 }
 
 \newglossaryentry{frdLabel}
 {
 	type=acronym,
 	name={FRD},
-	description={Body frame centered on the CG where the X-axis is pointing towards the Front of the vehicle, the Y-axis towards Right and the Z-axis is Down, completing the right-hand rule}
+	description={Coordinate system where the X-axis is pointing towards the Front of the vehicle, the Y-axis is pointing Right and the Z-axis is pointing Down, completing the right-hand rule}
+}
+
+\newglossaryentry{localFrameLabel}
+{
+	type=acronym,
+	name={Local frame},
+	description={Tangent to the surface of the earth, the local frame uses a NED coordinate system and is assumed to be inertial since the rotation of the earth is small compared to the rotation of the vehicle itself and is almost impossible to measure with a low-cost gyro. This frame is used to compute the navigation solution and define the pose of the drone (position and orientation). Its origin is defined when and where the drone arms}
+}
+
+\newglossaryentry{bodyFrameLabel}
+{
+	type=acronym,
+	name={Body frame},
+	description={Centered on the CG, the body frame uses a FRD coordinate system moving with the vehicle}
 }
 
 \newglossaryentry{fwLabel}
